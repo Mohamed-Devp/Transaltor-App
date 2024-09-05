@@ -1,7 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     border: 0;
     outline: none;
+}
+
+body{
+ font: 'Poppins';
+ background: #06283D;
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.container{
+    background: white;
+    width: 75vh;
+    height: 47vh;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.translation-box {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 225px 50px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 8px;
+}
+
+.trasnslate-input{
+    border-right: 1px solid rgb(220, 220, 220);
+}
+
+.translation textarea{
+    background: white;
+}
+
+.trasnslate-input textarea,
+.translation textarea{
+    font-size: 16px;
+    color: #06283D;
+    font-weight: 500;
+    padding: 5px;
+    margin: 5px;
+    text-transform: capitalize;
+    resize: none;
+    height: 90%;
+    width: 90%;
+}
+
+.trasnslate-input textarea::placeholder,
+.translation textarea::placeholder{
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.language-selection {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid rgb(220, 220, 220);
+}
+
+#from,
+#to {
+    width: 75px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #06283D;
+}
+#from option,
+#to option{
+    font-family: 'Poppins';
+    font-size: 12px;
+    color: #06283D;
+}
+
+.switch button{
+    background: none;
+    color: #06283D;
+    font-size: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.translate-button {
     box-sizing: border-box;
+    background: #06283D;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    width: 95%;
+    height: 50px;
+    border-radius: 10px;
+    margin: 15px;
+    cursor: pointer;
+    transition: opacity 0.15s ease-in;
+}
+
+.translate-button:hover{
+    opacity: 0.9;
 }

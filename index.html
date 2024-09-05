@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Translator App</title>
+    <title>Translator</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -13,26 +13,30 @@
     <div class="container">
         <div class="translation-box">
             <div class="trasnslate-input">
-                <input type="text" placeholder="enter text">
+                <textarea placeholder="enter text"></textarea>
             </div>
             <div class="translation">
-                <input type="text" disabled placeholder="translation">
+                <textarea placeholder="translation" disabled></textarea>
             </div>
             <div class="language-selection">
-                <div class="form">
-
+                <div class="from">
+                    <select id="from">
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                    </select>
                 </div>
                 <div class="switch">
                     <button class="fa-solid fa-arrow-right-arrow-left"></button>
                 </div>
                 <div class="to">
-                    
+                    <select id="to">
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                    </select>
                 </div>
             </div>
         </div>
-        <div class="translate-button">
-            <button>Translate Text</button>
-        </div>
+            <button class="translate-button">Translate Text</button>
     </div>
     
 
