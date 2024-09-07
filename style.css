@@ -109,3 +109,9 @@ body{
 .translate-button:hover{
     opacity: 0.9;
 }
+
+i {
+    color: #06283D;
+    font-size: 12px;
+    cursor: pointer;
+}
